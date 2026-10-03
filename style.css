@@ -1,0 +1,102 @@
+/* What is CSS? */
+/* CSS stands for Cascading Style Sheets. It is a stylesheet language used to describe the presentation of a document written in HTML. */
+/* CSS is just meant for styling HTML elements. */
+
+/* CSS Inclusion: */
+/* There are different ways to include CSS in an HTML document: */
+/* 1. Inline CSS: Using the style attribute within an HTML element. */
+/* 2. Internal CSS: Using the <style> tag within the <head> section of the HTML document. */
+/* 3. External CSS: Using a separate .css file and linking it to the HTML document using the <link> tag. */
+/* 4. Imported CSS: Using the @import rule to import an external CSS file into another CSS file. */
+
+
+/* CSS Selectors: */
+/* A CSS selector is a pattern used to select the HTML elements you want to style. There are different types of selectors, including: */
+
+/*  Universal Selector (*)   */
+/* The universal selector selects all elements in the HTML document. */
+/* Example: */
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    background-image: url("images/Landscape\ Poster.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/*  Type Selector (element)   */
+/* The type selector selects all elements of a specific type/tag. */   
+/* Example: */
+p {
+    color: blue;
+    font-size: 16px;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+/*  Class Selector (.className)   */
+/* The class selector selects all elements with a specific class attribute. */
+/* Example: */
+.about-section {
+    background-color: rgb(225, 220, 220);
+    padding: 50px;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+/*  ID Selector (#idName)   */
+/* The ID selector selects a single element with a specific id attribute. */
+/* Example: */
+#head {
+    color: blue;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Descendant Selector (parent descendant)   */
+/* The descendant selector selects all elements that are descendants of a specified element. */
+/* Example: */
+.descendant p {
+    color: darkgray;
+    font-size: 16px;
+}
+
+/* Child Selector (parent > child)   */
+/* The child selector selects all elements that are direct children of a specified element. */ 
+/* Example: */
+.child > p {
+    color: rgb(181, 177, 177);
+    font-size: 16px;
+}
+
+/* Attribute Selector ([attribute])   */
+/* The attribute selector selects all elements that have a specific attribute. */
+/* Example: */
+[href] {
+    color: #00f;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 50%;
+    margin: 10px;
+    height: 100px;
+    width: 110px;
+    opacity: 0.8;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    opacity: 1;
+}

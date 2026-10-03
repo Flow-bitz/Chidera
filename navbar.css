@@ -1,0 +1,29 @@
+h5{
+    color: green;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav {
+    background-color: rgb(181, 177, 177);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+
+ 
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+a:active {
+    color: orange;
+    text-decoration: underline;
+}
